@@ -1,5 +1,7 @@
 from datetime import datetime   
 from playsound import playsound
+import win10toast
+
 alarm_time = input("Enter the time of alarm to be set:HH:MM:SS [PM or AM]\n")
 alarm_hour=alarm_time[0:2]
 alarm_minute=alarm_time[3:5]
@@ -18,6 +20,8 @@ while True:
         if(alarm_hour==current_hour):
             if(alarm_minute==current_minute):
                 if(alarm_seconds==current_seconds):
-                    print("Wake Up!")
+                    toaster = win10toast.ToastNotifier()
+                    toaster.show_toast('alarm','Wake Up!',duration=5)
+    
                     playsound('alarm.mp3')
                     break
