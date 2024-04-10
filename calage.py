@@ -32,4 +32,3 @@ dayEntry.grid(row=4 ,column=0, pady=10)
 
 Button(text="حساب کردن سن",command=CalAge,).grid(row=5,column=0,pady=10)
 root.mainloop() 
-
