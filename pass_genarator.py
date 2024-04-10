@@ -11,6 +11,7 @@ def generate_pass():
         password.append(numbers)
         passwords = " ".join(str(x)for x in password)
         label.config(text=passwords)
+        
 root = tk.Tk()
 root.geometry("400x300")
 button = tk.Button(root, text="تولید پسورد", command=generate_pass)
