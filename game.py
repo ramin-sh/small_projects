@@ -118,7 +118,6 @@ def move_enemy():
             time.sleep(3)
             playing = False
 
-
 init()
 playing = True
 while playing:
