@@ -138,3 +138,5 @@ while playing:
 
 stdscr.clear()
 stdscr.refresh()
+
+
