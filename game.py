@@ -69,8 +69,7 @@ def in_range(a, min, max):
     return a
 
 def draw():
-    
-    
+        
     for i in range(maxl):
         for j in range(maxc):
             stdscr.addch(i,j, world[i][j])
